@@ -1,0 +1,184 @@
+body{
+   margin:0;
+   padding: 0;
+   min-height: 800px;
+   min-width: 800px;
+ 
+  
+}
+section{
+    height: 800px;
+    width: 800px;
+    background-image: url(..//images/group.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-left: auto;
+   margin-right: auto;  
+   position: relative;
+}
+.form{
+    width: 570px;
+    height: 470px;
+    background: rgb(231, 231, 231);
+    position: absolute;
+    top: 225px;
+    left:130px;
+    border:1px solid rgb(194, 193, 193);
+    border-radius: 5px;
+}
+
+h1{
+    width: 400px;
+    font-family:  Google Sans, Roboto, arial, sans-serif;
+    font-size: 15px;
+    color:rgb(194, 193, 193);
+    position: absolute;
+    top:-60px;
+    left:190px;
+    
+
+}
+input{
+    display: block;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    height:30px ;
+    width: 200px;
+    margin:5px 0;
+}
+  
+
+h3{ 
+    font-size: 17px;
+    padding: 18px;
+    text-align: center; 
+    background: rgb(67, 194, 211);
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    border-top:1px solid rgb(58, 166, 180);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.login{
+   
+    padding: 10px;
+    display: inline-block;
+    width: 45%;
+}
+.login input{
+    height:40px ;
+    width: 200px;
+    margin:35px 10px;
+}
+.login p{
+    content: '/';
+width:10px;
+height:10px;
+font-size: 20px;
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 3%;
+border-radius: 50%;
+background-color: rgb(194, 193, 193);
+
+}
+
+.login p::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    border-top: 1px solid #c0c0bf;
+}
+.login p::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    border-top: 1px solid #c0c0bf;
+    margin-left: -100px;
+    }
+hr{
+    display: inline-block;
+    width: 0.5px;
+    height: 250px;
+    background-color: #c0c0bf;;
+}
+[type="checkbox"]{
+    width: 20px !important;
+    display: inline-block;
+    margin: -45px -15px 4px 15px !important;
+}
+.login button{
+    width: 130px;
+    height: 35px;
+    margin-left: 60px;
+    background: linear-gradient(to bottom right, #004c6c 30%, #328fb6 60%, #4fb6e2 80%);
+    border:none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family:  Google Sans, Roboto, arial, sans-serif;
+}
+.password{
+    margin-bottom: 50px !important;
+}
+.register{
+    padding: 10px;
+    display: inline-block;
+    width: 45%;  
+}
+.register button{
+    width: 130px;
+    height: 35px;
+    background: linear-gradient(to bottom right, #aa7800 30%, #eca600 60%, #ffb400 80%);
+    border:none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family:  Google Sans, Roboto, arial, sans-serif;
+    margin:10px 0 0 33%;
+}
+.register h4{
+ color: rgb(109, 109, 110);
+}
+.register label{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+}
+span{
+    height: auto;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.check {
+    display: none;
+    font-size: 15px;
+    width: 160px;
+    margin-bottom: 20px;
+    color: rgb(119, 119, 119);
+}
+
+::placeholder{
+    color: rgb(128, 126, 126);
+    text-align: center;  
+ }
+
+
+
+
+
+
+ /* Это стиль для сообщений об ошибке */
+.error {
+    width  : 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }

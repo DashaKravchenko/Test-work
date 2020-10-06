@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/js.js" defer></script>
+</head>
+<body>
+
+ <section>
+   
+
+<div class="form">
+  <h1>Login To Your Account/Register New</h1>
+  <h3>Login To Your Account/Register New</h3> 
+    <div class="login">
+       <p></p> 
+      <form method="POST" action="php/log.php">  
+          <input type="text" name="user_name" class="user_name log" pattern="^[a-zA-Z]+$">
+          <input type="password" name="password" class="password log">
+          <input type="checkbox" name="checkbox" class="checkbox ">
+          <span class="check">Remember my password</span>
+          <button type="submit" class="validate_login">Login</button>
+      </form>
+    </div>
+    <hr>
+    
+    <div class="register" >
+      <form method="POST" action="php/reg.php" name="register" novalidate>
+        <h4>Register</h4>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="email reg" required>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+          <label for="name_reg">User name</label>
+          <input type="text" name="name_reg" class="name_reg reg" id="name_reg" pattern="^[a-zA-Z]+$" required>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div>
+          <label for="pass_reg">Password</label>
+          <input type="password" name="pass_reg" class="pass_reg reg" id="pass_reg" required>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <button type="submit" class="validate_register">Register</button>
+      </form>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+</body>
+</html>
